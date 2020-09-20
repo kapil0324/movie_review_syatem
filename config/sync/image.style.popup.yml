@@ -1,0 +1,15 @@
+uuid: 6873f88c-39ba-4b4c-969c-68b556a5c20b
+langcode: en
+status: true
+dependencies: {  }
+name: popup
+label: popup
+effects:
+  6f0d5455-7d88-481a-96dc-ea6c5fe79f98:
+    uuid: 6f0d5455-7d88-481a-96dc-ea6c5fe79f98
+    id: image_crop
+    weight: 1
+    data:
+      width: 700
+      height: 400
+      anchor: center-center

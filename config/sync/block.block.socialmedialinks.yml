@@ -1,0 +1,124 @@
+uuid: e3514246-b0ac-40a3-bcb6-da6c62572bdc
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - movie
+id: socialmedialinks
+theme: movie
+region: footer
+weight: -11
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    rss:
+      value: ''
+      description: ''
+      weight: '-10'
+    email:
+      value: ''
+      description: ''
+      weight: '-9'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-8'
+    website:
+      value: ''
+      description: ''
+      weight: '-7'
+    instagram:
+      value: '#'
+      description: ''
+      weight: '-6'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-5'
+    github:
+      value: ''
+      description: ''
+      weight: '-4'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-3'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-2'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-1'
+    contact:
+      value: ''
+      description: ''
+      weight: '0'
+    behance:
+      value: ''
+      description: ''
+      weight: '1'
+    flickr:
+      value: ''
+      description: ''
+      weight: '2'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '3'
+    twitter:
+      value: '#'
+      description: ''
+      weight: '4'
+    xing:
+      value: ''
+      description: ''
+      weight: '5'
+    youtube:
+      value: '#'
+      description: ''
+      weight: '6'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '7'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '8'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '9'
+    facebook:
+      value: '#'
+      description: ''
+      weight: '10'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '11'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '12'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

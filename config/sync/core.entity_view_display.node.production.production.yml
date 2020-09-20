@@ -1,0 +1,40 @@
+uuid: 5dec5f43-80fb-4bb2-8fa1-eb4a82ee408b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.production
+    - field.field.node.production.body
+    - field.field.node.production.field_logo
+    - node.type.production
+  module:
+    - image
+    - text
+    - user
+id: node.production.production
+targetEntityType: node
+bundle: production
+mode: production
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_logo:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

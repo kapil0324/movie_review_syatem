@@ -1,0 +1,28 @@
+variable_name: kapil
+title: null
+body: null
+data:
+  -
+    title:
+      - '<h1>Student of the Year 2</h2>'
+    body:
+      - 'Rohan follows his lover, Mridula, to St Teresa''s college hoping to reunite with her.'
+    image:
+      -
+        - '63'
+    user:
+      - '1'
+  -
+    title:
+      1: 'Good Newwz'
+    body:
+      1: 'Two married couples are unsuccessful in conceiving and seek medical treatment.'
+    image:
+      1:
+        - '64'
+    user:
+      1: '1'
+counter: 2
+image:
+  - '/sites/default/files/styles/banner/public/homepage_image/815166-814598-soty2.jpg?itok=Wd8zHyDM'
+  - '/sites/default/files/styles/banner/public/homepage_image/maxresdefault.jpg?itok=n7P0J22W'

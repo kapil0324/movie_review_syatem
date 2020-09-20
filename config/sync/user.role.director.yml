@@ -1,0 +1,10 @@
+uuid: 68afac68-dc1b-400d-bb5e-9ac3e9e2c3ca
+langcode: en
+status: true
+dependencies: {  }
+id: director
+label: Director
+weight: 3
+is_admin: null
+permissions:
+  - 'delete own wishlist content'

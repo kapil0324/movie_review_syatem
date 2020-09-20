@@ -1,0 +1,14 @@
+uuid: 70341872-0761-4344-9547-7877cf849c76
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.movie_creator
+  module:
+    - user
+id: user_remove_role_action.movie_creator
+label: 'Remove the Movie Creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: movie_creator

@@ -1,0 +1,23 @@
+uuid: 42171585-243b-49f0-a7cd-dc265cb6fa24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_marked_as_cover_photo
+    - paragraphs.paragraphs_type.movie_photos
+id: paragraph.movie_photos.field_marked_as_cover_photo
+field_name: field_marked_as_cover_photo
+entity_type: paragraph
+bundle: movie_photos
+label: 'Marked as Cover Photo'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

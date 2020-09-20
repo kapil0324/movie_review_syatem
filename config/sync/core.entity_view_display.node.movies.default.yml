@@ -1,0 +1,46 @@
+uuid: c6376327-7a34-4f4f-bf93-3f6531f5a43f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movies.body
+    - field.field.node.movies.field_genre
+    - field.field.node.movies.field_movie_cast
+    - field.field.node.movies.field_movie_director
+    - field.field.node.movies.field_movie_ideo
+    - field.field.node.movies.field_movie_photos
+    - field.field.node.movies.field_production
+    - field.field.node.movies.field_release_date
+    - node.type.movies
+  module:
+    - user
+    - video_embed_field
+id: node.movies.default
+targetEntityType: node
+bundle: movies
+mode: default
+content:
+  field_movie_ideo:
+    weight: 1
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_genre: true
+  field_movie_cast: true
+  field_movie_director: true
+  field_movie_photos: true
+  field_production: true
+  field_release_date: true

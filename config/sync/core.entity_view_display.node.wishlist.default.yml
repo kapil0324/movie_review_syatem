@@ -1,0 +1,37 @@
+uuid: ba38e553-5808-4473-8d91-916ba2c32a7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wishlist.field_movie
+    - field.field.node.wishlist.field_user
+    - node.type.wishlist
+  module:
+    - user
+id: node.wishlist.default
+targetEntityType: node
+bundle: wishlist
+mode: default
+content:
+  field_movie:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_user:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

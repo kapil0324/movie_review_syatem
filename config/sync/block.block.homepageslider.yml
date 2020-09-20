@@ -1,0 +1,26 @@
+uuid: c61b1d9a-dd35-4243-9b1e-dfff6f45d9b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - movie_utility
+    - system
+  theme:
+    - movie
+id: homepageslider
+theme: movie
+region: content
+weight: -11
+provider: null
+plugin: homepage_slider
+settings:
+  id: homepage_slider
+  label: 'Homepage slider'
+  provider: movie_utility
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

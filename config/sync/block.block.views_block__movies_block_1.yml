@@ -1,0 +1,33 @@
+uuid: 7b342a97-6529-4704-960b-4e62a16d1d19
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.movies
+  module:
+    - node
+    - views
+  theme:
+    - movie
+id: views_block__movies_block_1
+theme: movie
+region: sidebar_first
+weight: -11
+provider: null
+plugin: 'views_block:movies-block_1'
+settings:
+  id: 'views_block:movies-block_1'
+  label: 'Cover Photo'
+  provider: views
+  label_display: visible
+  views_label: 'Cover Photo'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      movies: movies
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

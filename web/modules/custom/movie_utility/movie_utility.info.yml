@@ -1,0 +1,5 @@
+name: 'movie_utility'
+type: module
+description: 'This module is handling custome functionality.'
+core: 8.x
+package: 'Custom'

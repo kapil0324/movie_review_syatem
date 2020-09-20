@@ -1,0 +1,27 @@
+uuid: be4fbc94-bd4c-4f1b-b5c3-fbef6be02443
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.movie_photos.field_image
+    - field.field.paragraph.movie_photos.field_marked_as_cover_photo
+    - image.style.banner
+    - paragraphs.paragraphs_type.movie_photos
+  module:
+    - media
+id: paragraph.movie_photos.default
+targetEntityType: paragraph
+bundle: movie_photos
+mode: default
+content:
+  field_image:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: banner
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_marked_as_cover_photo: true

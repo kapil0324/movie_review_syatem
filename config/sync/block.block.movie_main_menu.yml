@@ -1,0 +1,27 @@
+uuid: 5f970e56-b257-4839-93a5-765d798f2f40
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - movie
+_core:
+  default_config_hash: ERtUwuUKdqiRLiXjBoV7gcIIZgt2IdqWBzqsqtm63w4
+id: movie_main_menu
+theme: movie
+region: navigation_collapsible
+weight: 10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

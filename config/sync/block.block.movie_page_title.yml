@@ -1,0 +1,27 @@
+uuid: 25c0179f-3597-4699-a865-766fabae16cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movie
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: movie_page_title
+theme: movie
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/user/*"
+    negate: true
+    context_mapping: {  }

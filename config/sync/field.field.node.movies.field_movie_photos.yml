@@ -1,0 +1,31 @@
+uuid: 644439f9-545f-4e5a-b8a6-eebe7843e2a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movie_photos
+    - node.type.movies
+    - paragraphs.paragraphs_type.movie_photos
+  module:
+    - entity_reference_revisions
+id: node.movies.field_movie_photos
+field_name: field_movie_photos
+entity_type: node
+bundle: movies
+label: 'Movie Photos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      movie_photos: movie_photos
+    target_bundles_drag_drop:
+      movie_photos:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

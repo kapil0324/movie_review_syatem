@@ -1,0 +1,32 @@
+uuid: d7b8a2b3-49c1-442e-ad60-f6f975c93c76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.movie_photos.field_image
+    - field.field.paragraph.movie_photos.field_marked_as_cover_photo
+    - paragraphs.paragraphs_type.movie_photos
+  module:
+    - media_library
+id: paragraph.movie_photos.default
+targetEntityType: paragraph
+bundle: movie_photos
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_marked_as_cover_photo:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  status: true

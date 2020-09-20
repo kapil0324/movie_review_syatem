@@ -1,0 +1,10 @@
+uuid: 29dc4e17-11b6-4363-bbbc-fa42298141df
+langcode: en
+status: true
+dependencies: {  }
+id: actor
+label: Actor/actress
+weight: 4
+is_admin: null
+permissions:
+  - 'delete own wishlist content'

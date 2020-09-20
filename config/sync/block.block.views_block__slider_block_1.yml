@@ -1,0 +1,33 @@
+uuid: e7f64775-55f9-4bbf-aaf2-76887ea6671e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - node
+    - views
+  theme:
+    - movie
+id: views_block__slider_block_1
+theme: movie
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: 'Movie Slider'
+  provider: views
+  label_display: visible
+  views_label: 'Movie Slider'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      movies: movies
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

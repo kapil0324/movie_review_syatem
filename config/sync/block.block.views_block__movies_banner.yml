@@ -1,0 +1,30 @@
+uuid: 13485a0b-8501-4b77-b965-1d129ca68374
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.movies
+  module:
+    - system
+    - views
+  theme:
+    - movie
+id: views_block__movies_banner
+theme: movie
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:movies-banner'
+settings:
+  id: 'views_block:movies-banner'
+  label: 'Movies Banner'
+  provider: views
+  label_display: visible
+  views_label: 'Movies Banner'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

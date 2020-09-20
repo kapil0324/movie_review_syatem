@@ -1,0 +1,25 @@
+uuid: b03636e3-969f-4037-bf4c-3891dca2e079
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movie_director
+    - node.type.movies
+id: node.movies.field_movie_director
+field_name: field_movie_director
+entity_type: node
+bundle: movies
+label: 'Movie Director'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: user_reference
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

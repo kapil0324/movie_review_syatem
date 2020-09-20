@@ -1,0 +1,14 @@
+uuid: 3e08e861-3711-466f-84f0-b71d93e12716
+name: 'Movie Review System'
+mail: kapil0324@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/8
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

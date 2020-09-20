@@ -1,0 +1,10 @@
+uuid: 89966f15-1672-48d3-9b17-8512f80f9782
+langcode: en
+status: true
+dependencies: {  }
+id: movie_photos
+label: 'Movie photos'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

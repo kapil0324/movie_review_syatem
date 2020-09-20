@@ -1,0 +1,33 @@
+uuid: 67f0d9da-8e0a-4677-8eb9-452566e80647
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.movies
+  module:
+    - node
+    - views
+  theme:
+    - movie
+id: views_block__movies_block_2
+theme: movie
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'views_block:movies-block_2'
+settings:
+  id: 'views_block:movies-block_2'
+  label: Description
+  provider: views
+  label_display: visible
+  views_label: Description
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      movies: movies
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

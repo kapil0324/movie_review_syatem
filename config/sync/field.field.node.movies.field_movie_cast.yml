@@ -1,0 +1,25 @@
+uuid: 216b66fb-b71f-4d6b-b96a-f1b22fd04a5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movie_cast
+    - node.type.movies
+id: node.movies.field_movie_cast
+field_name: field_movie_cast
+entity_type: node
+bundle: movies
+label: 'Movie Cast'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: user_reference
+      display_name: entity_reference_2
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,39 @@
+movie_utility.user_wishlist_controller_content:
+  path: '/add/wishlist/{id}'
+  defaults:
+    _controller: '\Drupal\movie_utility\Controller\UserWishlistController::content'
+    _title: 'My Content Wishlist'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+    user: \d+
+
+movie_utility.user_wishlist_remove:
+  path: '/wishlist/remove/{id}'
+  defaults:
+    _controller: '\Drupal\movie_utility\Controller\UserWishlistController::remove'
+    _title: 'My Content Wishlist'
+  requirements:
+    _user_is_logged_in: 'TRUE'  
+
+movie_utility.custom_serach_form:
+  path: '/movie_utility/form/custom_serach'
+  defaults:
+    _form: '\Drupal\movie_utility\Form\CustomSerachForm'
+    _title: 'CustomSerachForm'
+  requirements:
+    _access: 'TRUE'
+
+movie_utility.search:
+  path: '/movies'
+  defaults:
+    _controller: '\Drupal\movie_utility\Controller\UserWishlistController::search'
+    _title: 'Movies'
+  requirements:
+    _access: 'TRUE'    
+movie_utility.homepage_popup_config_form:
+  path: '/movies/config'
+  defaults:
+    _form: '\Drupal\movie_utility\Form\HomepagePopupConfigForm'
+    _title: 'Homepage Popup Configuration Form'
+  requirements:
+   _permission: 'use popup config form'

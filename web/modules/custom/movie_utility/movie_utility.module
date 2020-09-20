@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * Contains movie_utility.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_help().
+ */
+function movie_utility_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the movie_utility module.
+    case 'help.page.movie_utility':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module is handling custome functionality.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implementation hook_form_alter().
+ */
+function movie_utility_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'node_movies_form' || $form_id == 'node_movies_edit_form') {
+    $form['#validate'][] = 'paragraph_validation';
+    $form['actions']['submit']['#submit'][] = 'paragraph_submit';
+  }
+}
+
+/**
+ * checking mark as conver photo is checked or not.
+ */
+function paragraph_validation(array &$form, FormStateInterface $form_state) {
+  $paragraph_data = $form_state->getValue('field_movie_photos');
+  $count = 0;
+  foreach ($paragraph_data as $key => $value) {
+    if ($value['subform']['field_marked_as_cover_photo']['value']) {
+      $count++;
+    }
+  }
+  if ($count > 1) {
+    $form_state->setErrorByName('field_marked_as_cover_photo', t('Only one image can be marked as cover photo.'));
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function movie_utility_theme() {
+  return [
+    'homepage_slider' => [
+      'variables' => [
+        'data' => [],
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}

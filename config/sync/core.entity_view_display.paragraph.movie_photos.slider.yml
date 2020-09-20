@@ -1,0 +1,28 @@
+uuid: 8926c6a4-eb41-4a31-81a4-0dd15488f324
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.slider
+    - field.field.paragraph.movie_photos.field_image
+    - field.field.paragraph.movie_photos.field_marked_as_cover_photo
+    - image.style.large
+    - paragraphs.paragraphs_type.movie_photos
+  module:
+    - media
+id: paragraph.movie_photos.slider
+targetEntityType: paragraph
+bundle: movie_photos
+mode: slider
+content:
+  field_image:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_marked_as_cover_photo: true
