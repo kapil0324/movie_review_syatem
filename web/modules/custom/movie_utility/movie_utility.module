@@ -30,7 +30,6 @@ function movie_utility_help($route_name, RouteMatchInterface $route_match) {
 function movie_utility_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
   if ($form_id == 'node_movies_form' || $form_id == 'node_movies_edit_form') {
     $form['#validate'][] = 'paragraph_validation';
-    $form['actions']['submit']['#submit'][] = 'paragraph_submit';
   }
 }
 
